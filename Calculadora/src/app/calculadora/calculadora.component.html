@@ -1,0 +1,37 @@
+<div class="calculator">
+    <div class="screen">
+        <div class="screen1"><p><strong>{{display2}}</strong></p></div>
+        <div class="screen2"><p><strong>{{display}}</strong></p></div>
+    </div>
+    <div class="numbers">
+        <div>
+            <button (click)="appendNumber('9')">9</button>
+            <button (click)="appendNumber('8')">8</button>
+            <button (click)="appendNumber('7')">7</button>
+        </div>
+        <div>
+            <button (click)="appendNumber('6')">6</button>
+            <button (click)="appendNumber('5')">5</button>
+            <button (click)="appendNumber('4')">4</button>
+        </div>
+        <div>
+            <button (click)="appendNumber('3')">3</button>
+            <button (click)="appendNumber('2')">2</button>
+            <button (click)="appendNumber('1')">1</button>
+        </div>
+        <div>
+            <button (click)="appendNumber('.')">.</button>
+            <button (click)="appendNumber('0')">0</button>
+            <button (click)="appendNumber('00')">00</button>
+        </div>
+    </div>
+    <div class="operators">
+        <button (click)="clear()"><strong>DEL</strong></button>
+        <button (click)="appendOperator('/')"><strong>/</strong></button>
+        <button (click)="appendOperator('*')"><strong>X</strong></button>
+        <button (click)="appendOperator('-')"><strong>-</strong></button>
+        <button (click)="appendOperator('+')"><strong>+</strong></button>
+        <button (click)="calculate()"><strong>=</strong></button>
+    </div>
+</div>
+  
